@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    {{#if pageDescription}}
+      {{!-- The description seen in search engines --}}
+      <meta name="description" content="{{ pageDescription }}">
+    {{/if}}
+    {{#if pageTitle}}
+      {{!-- The page title seen in search engines and browser tab name --}}
+      <title>{{pageTitle}}</title>
+    {{/if}}
+    <link rel="stylesheet" href="{{ getVersionedPath "/app.css" }}" />
+    <link rel="shortcut icon" type="image/x-icon" href="{{ getVersionedPath "/img/favicon.ico" }}" />
+  </head>
+
+  <body>
+    {{{body}}}
+    <script type="text/javascript" src="{{ getVersionedPath "/app.js" }}"></script>
+  </body>
+</html>

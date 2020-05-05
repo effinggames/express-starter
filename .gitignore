@@ -1,0 +1,12 @@
+###OSX###
+
+.DS_Store
+.keys
+
+npm-debug.log
+
+/tmp
+/public
+/.idea
+/node_modules
+/target
